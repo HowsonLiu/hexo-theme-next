@@ -1,3 +1,5 @@
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
 {%- if theme.footer.beian.enable %}
   <div class="beian">
     {{- next_url('http://www.beian.miit.gov.cn', theme.footer.beian.icp + ' ') }}
@@ -40,6 +42,13 @@
     {%- endif %}
     <span title="{{ __('symbols_count_time.time_total') }}">{{ symbolsTimeTotal(site, config.symbols_count_time.awl, config.symbols_count_time.wpm, __('symbols_count_time.time_minutes')) }}</span>
   {%- endif %}
+</div>
+
+<div class="busuanzi">
+<span>
+    <span id="busuanzi_value_site_uv"></span> people browse 
+	<span id="busuanzi_value_site_pv"></span> times
+</span>
 </div>
 
 {%- if theme.footer.powered %}
